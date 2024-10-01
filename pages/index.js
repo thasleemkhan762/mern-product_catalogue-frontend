@@ -26,7 +26,7 @@ const Home = () => {
     useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await axios.get(`http://localhost:5000/api/products?category=${selectedCategory || ''}&page=${currentPage}`);
+              const response = await axios.get(`https://mern-product-catalogue-backend.onrender.com/api/products?category=${selectedCategory || ''}&page=${currentPage}`);
               if (response.data) {
                   dispatch(setProducts({ products: response.data.products, total: response.data.total }));
               } else {
