@@ -1,0 +1,16 @@
+.categorySelect {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.categorySelect:focus {
+    outline: none;
+    border-color: #4caf50;
+}
